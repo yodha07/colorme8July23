@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title> SARDA </title>
+	<style>
+		* {font-size : 50px; }
+		body {background-color: azure;}
+	</style>
+</head>
+<body>
+<center>
+	<h1> Happy Holi!! </h1>
+	<form onsubmit = "colorme()">
+		<input type = "submit" value = "Color ME">
+	</form>
+	<script>
+	function colorme() {
+			event.preventDefault();
+			let colors = ["red", "blue", "cyan", "lightgreen", "orange", "magenta", "pink"];
+			let r = parseInt(Math.random() * colors.length)
+			document.body.style.background = colors[r];
+		}
+	</script>
+<center>
+</body>
+</html>
